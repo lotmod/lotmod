@@ -734,6 +734,32 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "wegiel"
+    },
+    {
+      "name": "DirtswordToolInInventoryTick",
+      "type": "procedure",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirtsword_tool_in_inventory_tick",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dirtsword",
+      "type": "tool",
+      "sortid": 47,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dirtsword"
     }
   ],
   "variable_elements": [],
@@ -749,8 +775,8 @@
       "key.mcreator.powrot": "Powrot",
       "item.lotmod.endarmorbody": "End-Chestplate",
       "advancements.nowewymiary.title": "Nowewymiary",
-      "item.lotmod.dinnerbone": "jeb_ Spawn-Egg",
       "item.lotmod.lot": "Lot Portal Igniter",
+      "item.lotmod.dinnerbone": "jeb_ Spawn-Egg",
       "entity.lotmod.dinnerbone": "jeb_",
       "item.lotmod.endarmorlegs": "End-Leggings",
       "biome.lotmod.lotmod": "Lotmod",
@@ -773,6 +799,7 @@
       "key.mcreator.latanie": "dom",
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "item.lotmod.endarmor_helmet": "End Helmet",
+      "item.lotmod.dirtsword": "Dirtsword",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"
