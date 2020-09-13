@@ -767,6 +767,15 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "tnty"
+    },
+    {
+      "name": "Wegiel",
+      "type": "fuel",
+      "sortid": 46,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "wegiel"
     }
   ],
   "variable_elements": [],
