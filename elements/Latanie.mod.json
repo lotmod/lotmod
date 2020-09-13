@@ -1,0 +1,12 @@
+{
+  "_fv": 11,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "P",
+    "keyBindingName": "dom",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "LatanieOnKeyPressedgui"
+    }
+  }
+}

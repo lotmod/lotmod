@@ -1,0 +1,42 @@
+{
+  "_fv": 11,
+  "_type": "gui",
+  "definition": {
+    "type": 1,
+    "width": 197,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "Handlarzarlak",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "Handlarzarlak",
+          "x": 176,
+          "y": 40
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "test",
+          "onClick": {
+            "name": "Stoloig"
+          },
+          "width": 40,
+          "height": 20,
+          "name": "test",
+          "x": 189,
+          "y": 68
+        }
+      }
+    ]
+  }
+}

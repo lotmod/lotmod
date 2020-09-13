@@ -1,0 +1,12 @@
+{
+  "_fv": 11,
+  "_type": "keybind",
+  "definition": {
+    "triggerKey": "HOME",
+    "keyBindingName": "Powrot",
+    "keyBindingCategoryKey": "misc",
+    "onKeyPressed": {
+      "name": "PowrotOnKeyPressed"
+    }
+  }
+}

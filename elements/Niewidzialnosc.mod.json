@@ -1,0 +1,25 @@
+{
+  "_fv": 11,
+  "_type": "enchantment",
+  "definition": {
+    "name": "Niewidzialnosc",
+    "type": "BREAKABLE",
+    "rarity": "RARE",
+    "minLevel": 1,
+    "maxLevel": 1,
+    "damageModifier": 10,
+    "compatibleEnchantments": [
+      {
+        "value": "PROTECTION"
+      }
+    ],
+    "compatibleItems": [
+      {
+        "value": "Blocks.LOG"
+      }
+    ],
+    "isTreasureEnchantment": false,
+    "isCurse": false,
+    "isAllowedOnBooks": true
+  }
+}

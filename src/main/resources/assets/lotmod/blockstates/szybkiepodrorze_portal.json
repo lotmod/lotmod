@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "lotmod:block/szybkiepodrorze_portal_ew"
+    },
+    "axis=x": {
+      "model": "lotmod:block/szybkiepodrorze_portal_ns"
+    }
+  }
+}

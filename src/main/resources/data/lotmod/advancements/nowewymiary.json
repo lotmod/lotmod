@@ -1,0 +1,29 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "lotmod:lot"
+    },
+    "title": {
+      "translate": "advancements.nowewymiary.title"
+    },
+    "description": {
+      "translate": "advancements.nowewymiary.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "nowewymiary": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "biome": "lotmod:lotmod"
+      }
+    }
+  },
+  "rewards": {
+    "experience": 1
+  }
+}

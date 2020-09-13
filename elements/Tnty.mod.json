@@ -1,0 +1,22 @@
+{
+  "_fv": 11,
+  "_type": "fluid",
+  "definition": {
+    "name": "Tnty",
+    "textureStill": "tnty",
+    "textureFlowing": "tnty",
+    "luminosity": 41,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": false,
+    "type": "LAVA",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "MISC"
+    },
+    "spawnWorldTypes": [],
+    "onEntityCollides": {
+      "name": "TntyMobplayerCollidesBlock"
+    }
+  }
+}

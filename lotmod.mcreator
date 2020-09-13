@@ -1,0 +1,872 @@
+{
+  "id_map": {},
+  "mod_elements": [
+    {
+      "name": "EndArmor",
+      "type": "armor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "EndArmorHelmetRecipe",
+      "type": "recipe",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EndArmorBodyRecipe",
+      "type": "recipe",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EndArmorLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EndArmorBootsRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "EndArmorBootsTickEvent",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Lot",
+      "type": "dimension",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Lotmod",
+      "type": "biome",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Kamien",
+      "type": "gun",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Kamienrecp",
+      "type": "recipe",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LatanieOnKeyPressed",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Latanie",
+      "type": "keybind",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Lotmodcr",
+      "type": "tab",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "KamienBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Khjghk",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "MateriaMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Materia",
+      "type": "fluid",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Portallot",
+      "type": "structure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Potwor",
+      "type": "mob",
+      "sortid": 17,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Osadnik",
+      "type": "gui",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "LatanieOnKeyPressedgui",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Stolik",
+      "type": "block",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Stoloig",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Programig",
+      "type": "mob",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Wiezadol",
+      "type": "structure",
+      "sortid": 23,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Kilofy",
+      "type": "tool",
+      "sortid": 24,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Multio",
+      "type": "recipe",
+      "sortid": 26,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "Nowewymiary",
+      "type": "achievement",
+      "sortid": 27,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {}
+    },
+    {
+      "name": "KowiatekPlantRightClicked",
+      "type": "procedure",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kowiatek_plant_right_clicked",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Kowiatek",
+      "type": "plant",
+      "sortid": 28,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kowiatek"
+    },
+    {
+      "name": "Tnt2356",
+      "type": "procedure",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnt_2_3_5_6",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tnt34",
+      "type": "procedure",
+      "sortid": 30,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnt_3_4",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tnt",
+      "type": "gui",
+      "sortid": 29,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnt"
+    },
+    {
+      "name": "TntmocneOnKeyPressed",
+      "type": "procedure",
+      "sortid": 31,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntmocne_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TntmocneOnKeyReleased",
+      "type": "procedure",
+      "sortid": 32,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntmocne_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tntexploder",
+      "type": "block",
+      "sortid": 33,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntexploder"
+    },
+    {
+      "name": "TntmocneOnKeyReleasedpowrót",
+      "type": "procedure",
+      "sortid": 34,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tntmocne_on_key_releasedpowrot",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "PowrotOnKeyPressed",
+      "type": "procedure",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powrot_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Powrot",
+      "type": "keybind",
+      "sortid": 35,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "powrot"
+    },
+    {
+      "name": "KilofyRightClickedInAir",
+      "type": "procedure",
+      "sortid": 36,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "kilofy_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Dinnerbone",
+      "type": "mob",
+      "sortid": 37,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "dinnerbone"
+    },
+    {
+      "name": "Szybkiepodrorze",
+      "type": "dimension",
+      "sortid": 38,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "szybkiepodrorze"
+    },
+    {
+      "name": "SzybkiepodozewlacznaiOnKeyPressed",
+      "type": "procedure",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "szybkiepodozewlacznai_on_key_pressed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SzybkiepodozewlacznaiOnKeyReleased",
+      "type": "procedure",
+      "sortid": 40,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "szybkiepodozewlacznai_on_key_released",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Szybkiepodozewlacznai",
+      "type": "keybind",
+      "sortid": 39,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "szybkiepodozewlacznai"
+    },
+    {
+      "name": "SzybkiepodrorzePlayerLeavesDimension",
+      "type": "procedure",
+      "sortid": 41,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "szybkiepodrorze_player_leaves_dimension",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "FlyCommandExecuted",
+      "type": "procedure",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly_command_executed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fly",
+      "type": "command",
+      "sortid": 42,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "fly"
+    },
+    {
+      "name": "SpawnerRightClickedInAir",
+      "type": "procedure",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner_right_clicked_in_air",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Spawner",
+      "type": "item",
+      "sortid": 43,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "spawner"
+    },
+    {
+      "name": "Niewidzialnosc",
+      "type": "enchantment",
+      "sortid": 44,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "niewidzialnosc"
+    },
+    {
+      "name": "TntyMobplayerCollidesBlock",
+      "type": "procedure",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnty_mobplayer_collides_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Tnty",
+      "type": "fluid",
+      "sortid": 45,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "tnty"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "pl_pl": {
+      "item.lotmod.potwor": "Potwor Spawn Egg",
+      "itemGroup.tablotmodcr": "Lotmodcr",
+      "block.lotmod.kowiatek": "Kowiatek",
+      "item.lotmod.endarmor_boots": "End Boots",
+      "item.lotmod.endarmor_leggings": "End Leggings",
+      "item.lotmod.kamien": "Kamien",
+      "key.mcreator.powrot": "Powrot",
+      "item.lotmod.endarmorbody": "End Chestplate",
+      "advancements.nowewymiary.title": "Nowewymiary",
+      "item.lotmod.dinnerbone": "Dinnerbone Spawn Egg",
+      "item.lotmod.lot": "Lot Portal Igniter",
+      "entity.lotmod.dinnerbone": "Dinnerbone",
+      "item.lotmod.endarmorlegs": "End Leggings",
+      "biome.lotmod.lotmod": "Lotmod",
+      "block.lotmod.tntexploder": "Tntexploder",
+      "block.lotmod.stolik": "Stolik",
+      "enchantment.lotmod.niewidzialnosc": "Niewidzialnosc",
+      "entity.lotmod.programig": "Programig",
+      "item.lotmod.programig_spawn_egg": "Programig Spawn Egg",
+      "item.lotmod.dinnerbone_spawn_egg": "jeb_ Spawn Egg",
+      "fluid.materia": "Materia",
+      "item.lotmod.potwor_spawn_egg": "Potwor Spawn Egg",
+      "item.lotmod.endarmorhelmet": "End Helmet",
+      "item.lotmod.endarmor_chestplate": "End Chestplate",
+      "item.lotmod.materia_bucket": "Materia Bucket",
+      "item.lotmod.spawner": "Spawner",
+      "advancements.nowewymiary.descr": "wejd¿ do lot wymiar",
+      "item.lotmod.kilofy": "Kilofy",
+      "item.lotmod.programig": "Programig Spawn Egg",
+      "entity.lotmod.potwor": "Potwor",
+      "key.mcreator.szybkiepodozewlacznai": "Szybkiepodozewlacznai",
+      "key.mcreator.latanie": "dom",
+      "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
+      "item.lotmod.endarmor_helmet": "End Helmet",
+      "item.lotmod.tnty_bucket": "Tnty Bucket",
+      "item.lotmod.endarmorboots": "End Boots",
+      "fluid.tnty": "Tnty"
+    },
+    "en_us": {
+      "item.lotmod.potwor": "Potwor Spawn Egg",
+      "itemGroup.tablotmodcr": "Lotmodcr",
+      "block.lotmod.kowiatek": "Kowiatek",
+      "item.lotmod.endarmor_boots": "End Boots",
+      "item.lotmod.endarmor_leggings": "End Leggings",
+      "item.lotmod.kamien": "Kamien",
+      "key.mcreator.powrot": "Powrot",
+      "item.lotmod.endarmorbody": "End Chestplate",
+      "advancements.nowewymiary.title": "Nowewymiary",
+      "item.lotmod.dinnerbone": "jeb_ Spawn Egg",
+      "item.lotmod.lot": "Lot Portal Igniter",
+      "entity.lotmod.dinnerbone": "jeb_",
+      "item.lotmod.endarmorlegs": "End Leggings",
+      "biome.lotmod.lotmod": "Lotmod",
+      "block.lotmod.tntexploder": "Tntexploder",
+      "block.lotmod.stolik": "Stolik",
+      "enchantment.lotmod.niewidzialnosc": "Niewidzialnosc",
+      "entity.lotmod.programig": "Programig",
+      "item.lotmod.programig_spawn_egg": "Programig Spawn Egg",
+      "item.lotmod.dinnerbone_spawn_egg": "jeb_ Spawn Egg",
+      "fluid.materia": "Materia",
+      "item.lotmod.potwor_spawn_egg": "Potwor Spawn Egg",
+      "item.lotmod.endarmorhelmet": "End Helmet",
+      "item.lotmod.endarmor_chestplate": "End Chestplate",
+      "item.lotmod.materia_bucket": "Materia Bucket",
+      "item.lotmod.spawner": "Spawner",
+      "advancements.nowewymiary.descr": "wejd¿ do lot wymiar",
+      "item.lotmod.kilofy": "Kilofy",
+      "item.lotmod.programig": "Programig Spawn Egg",
+      "entity.lotmod.potwor": "Potwor",
+      "key.mcreator.szybkiepodozewlacznai": "Szybkiepodozewlacznai",
+      "key.mcreator.latanie": "dom",
+      "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
+      "item.lotmod.endarmor_helmet": "End Helmet",
+      "item.lotmod.tnty_bucket": "Tnty Bucket",
+      "item.lotmod.endarmorboots": "End Boots",
+      "fluid.tnty": "Tnty"
+    }
+  },
+  "workspaceSettings": {
+    "modid": "lotmod",
+    "modName": "lot_mod",
+    "version": "1.0.0",
+    "author": "User, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.15.2",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.lotmod",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202000535716
+}

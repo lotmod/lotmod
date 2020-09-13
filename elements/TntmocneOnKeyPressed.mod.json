@@ -1,0 +1,7 @@
+{
+  "_fv": 11,
+  "_type": "procedure",
+  "definition": {
+    "procedurexml": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\"?><xml xmlns=\"https://developers.google.com/blockly/xml\"><block type=\"entity_set_flying\" x=\"193\" y=\"3\"><value name=\"entity\"><block type=\"entity_from_deps\"/></value><value name=\"condition\"><block type=\"logic_boolean\"><field name=\"BOOL\">TRUE</field></block></value></block><block deletable=\"false\" type=\"event_trigger\" x=\"40\" y=\"40\"><field name=\"trigger\">no_ext_trigger</field><next><block type=\"entity_add_potion\"><field name=\"potion\">BLINDNESS</field><value name=\"level\"><block type=\"math_number\"><field name=\"NUM\">1</field></block></value><value name=\"duration\"><block type=\"math_number\"><field name=\"NUM\">12</field></block></value><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"entity_switch_dimension\"><field name=\"dimension\">End</field><value name=\"entity\"><block type=\"entity_from_deps\"/></value><next><block type=\"explode\"><value name=\"x\"><block type=\"coord_x\"/></value><value name=\"y\"><block type=\"coord_y\"/></value><value name=\"z\"><block type=\"coord_z\"/></value><value name=\"power\"><block type=\"math_number\"><field name=\"NUM\">4</field></block></value></block></next></block></next></block></next></block></xml>"
+  }
+}

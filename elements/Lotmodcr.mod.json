@@ -1,0 +1,11 @@
+{
+  "_fv": 11,
+  "_type": "tab",
+  "definition": {
+    "name": "Lotmodcr",
+    "icon": {
+      "value": "CUSTOM:Kamien"
+    },
+    "showSearch": false
+  }
+}

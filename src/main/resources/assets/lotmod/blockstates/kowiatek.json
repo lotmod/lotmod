@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=1": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=2": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=3": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=4": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=5": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=6": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=7": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=8": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=9": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=10": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=11": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=12": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=13": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=14": {
+      "model": "lotmod:block/kowiatek"
+    },
+    "age=15": {
+      "model": "lotmod:block/kowiatek"
+    }
+  }
+}

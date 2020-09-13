@@ -1,0 +1,26 @@
+{
+  "_fv": 11,
+  "_type": "tool",
+  "definition": {
+    "renderType": 0,
+    "texture": "multitool",
+    "customModelName": "Normal",
+    "name": "Kilofy",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Lotmodcr"
+    },
+    "toolType": "MultiTool",
+    "harvestLevel": 123,
+    "efficiency": 123.0,
+    "attackSpeed": 1.0,
+    "enchantability": 123,
+    "damageVsEntity": 123.0,
+    "usageCount": 1000,
+    "blocksAffected": [],
+    "hasGlow": false,
+    "repairItems": [],
+    "stayInGridWhenCrafting": false,
+    "damageOnCrafting": false
+  }
+}

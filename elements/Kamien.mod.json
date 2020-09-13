@@ -1,0 +1,39 @@
+{
+  "_fv": 11,
+  "_type": "gun",
+  "definition": {
+    "renderType": 0,
+    "texture": "kuler",
+    "customModelName": "Normal",
+    "name": "Kamien",
+    "specialInfo": [],
+    "creativeTab": {
+      "value": "CUSTOM:Lotmodcr"
+    },
+    "stackSize": 36,
+    "ammoItem": {
+      "value": ""
+    },
+    "shootConstantly": false,
+    "usageCount": 240,
+    "actionSound": {
+      "value": "entity.arrow.shoot"
+    },
+    "hasGlow": false,
+    "enableMeleeDamage": false,
+    "damageVsEntity": 6.8,
+    "bulletPower": 1.0,
+    "bulletDamage": 9.299999999999999,
+    "bulletKnockback": 5,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
+    "bulletItemTexture": {
+      "value": "Items.END_CRYSTAL"
+    },
+    "bulletModel": "Default",
+    "customBulletModelTexture": "",
+    "onBulletHitsBlock": {
+      "name": "KamienBulletHitsBlock"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "_fv": 11,
+  "_type": "fluid",
+  "definition": {
+    "name": "Materia",
+    "textureStill": "cvvnbfg",
+    "textureFlowing": "cvvnbfg",
+    "luminosity": 12,
+    "density": 1000,
+    "viscosity": 1000,
+    "isGas": true,
+    "type": "WATER",
+    "generateBucket": true,
+    "creativeTab": {
+      "value": "CUSTOM:Lotmodcr"
+    },
+    "spawnWorldTypes": [
+      "CUSTOM:Lot"
+    ],
+    "onEntityCollides": {
+      "name": "MateriaMobplayerCollidesBlock"
+    }
+  }
+}

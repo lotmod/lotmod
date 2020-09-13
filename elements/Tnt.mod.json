@@ -1,0 +1,66 @@
+{
+  "_fv": 11,
+  "_type": "gui",
+  "definition": {
+    "type": 0,
+    "width": 176,
+    "height": 166,
+    "inventoryOffsetX": 0,
+    "inventoryOffsetY": 0,
+    "renderBgLayer": true,
+    "doesPauseGame": false,
+    "components": [
+      {
+        "type": "label",
+        "data": {
+          "text": "tnt",
+          "color": {
+            "value": -1,
+            "falpha": 0.0
+          },
+          "name": "tnt",
+          "x": 189,
+          "y": 50
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "tnt 34",
+          "onClick": {
+            "name": "Tnt34"
+          },
+          "width": 60,
+          "height": 20,
+          "name": "tnt 34",
+          "x": 142,
+          "y": 72
+        }
+      },
+      {
+        "type": "button",
+        "data": {
+          "text": "tnt 2345",
+          "onClick": {
+            "name": "Tnt2356"
+          },
+          "width": 80,
+          "height": 20,
+          "name": "tnt 2345",
+          "x": 210,
+          "y": 71
+        }
+      },
+      {
+        "type": "image",
+        "data": {
+          "image": "images.png",
+          "use1Xscale": false,
+          "name": "images.png",
+          "x": 128,
+          "y": 100
+        }
+      }
+    ]
+  }
+}

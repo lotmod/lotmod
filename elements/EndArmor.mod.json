@@ -1,0 +1,58 @@
+{
+  "_fv": 11,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "end_head",
+    "enableBody": true,
+    "textureBody": "end_body",
+    "enableLeggings": true,
+    "textureLeggings": "end_leggings",
+    "enableBoots": true,
+    "textureBoots": "end_boots",
+    "onBootsTick": {
+      "name": "EndArmorBootsTickEvent"
+    },
+    "creativeTab": {
+      "value": "CUSTOM:Lotmodcr"
+    },
+    "armorTextureFile": "end",
+    "helmetName": "End Helmet",
+    "bodyName": "End Chestplate",
+    "leggingsName": "End Leggings",
+    "bootsName": "End Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "Default",
+    "helmetModelPart": "Helmet",
+    "helmetModelTexture": "From armor",
+    "bodyModelName": "Default",
+    "bodyModelPart": "Body",
+    "bodyModelTexture": "From armor",
+    "leggingsModelName": "Default",
+    "leggingsModelPartL": "Leggings L",
+    "leggingsModelPartR": "Leggings R",
+    "leggingsModelTexture": "From armor",
+    "bootsModelName": "Default",
+    "bootsModelPartL": "Boots L",
+    "bootsModelPartR": "Boots R",
+    "bootsModelTexture": "From armor",
+    "maxDamage": 40,
+    "damageValueHelmet": 2,
+    "damageValueBody": 5,
+    "damageValueLeggings": 6,
+    "damageValueBoots": 2,
+    "enchantability": 9,
+    "toughness": 3.0,
+    "equipSound": {
+      "value": "entity.endermen.ambient"
+    },
+    "repairItems": [
+      {
+        "value": "Items.ENDER_PEARL"
+      }
+    ]
+  }
+}

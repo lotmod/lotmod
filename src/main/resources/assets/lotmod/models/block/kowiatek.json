@@ -1,0 +1,7 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "lotmod:blocks/kwiatek",
+    "particle": "lotmod:blocks/kwiatek"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lotmod:blocks/cvvnbfg",
+    "up": "lotmod:blocks/cvvnbfg",
+    "north": "lotmod:blocks/cvvnbfg",
+    "east": "lotmod:blocks/cvvnbfg",
+    "south": "lotmod:blocks/cvvnbfg",
+    "west": "lotmod:blocks/cvvnbfg",
+    "particle": "lotmod:blocks/cvvnbfg"
+  }
+}
