@@ -1,6 +1,6 @@
 Lotmod pliki mcreator
 
-Pobierz https://github.com/lotmod/lotmod/releases
+Pobierz https://github.com/lotmod/lotmod/actions
 
 Działa z multiplayer
 
