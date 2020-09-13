@@ -472,39 +472,6 @@
       "registry_name": "tntexploder"
     },
     {
-      "name": "TntmocneOnKeyReleasedpowrót",
-      "type": "procedure",
-      "sortid": 34,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "tntmocne_on_key_releasedpowrot",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "PowrotOnKeyPressed",
       "type": "procedure",
       "sortid": 35,
@@ -782,8 +749,8 @@
       "key.mcreator.powrot": "Powrot",
       "item.lotmod.endarmorbody": "End-Chestplate",
       "advancements.nowewymiary.title": "Nowewymiary",
-      "item.lotmod.dinnerbone": "jeb_ Spawn-Egg",
       "item.lotmod.lot": "Lot Portal Igniter",
+      "item.lotmod.dinnerbone": "jeb_ Spawn-Egg",
       "entity.lotmod.dinnerbone": "jeb_",
       "item.lotmod.endarmorlegs": "End-Leggings",
       "biome.lotmod.lotmod": "Lotmod",
