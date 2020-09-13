@@ -722,15 +722,6 @@
       "registry_name": "spawner"
     },
     {
-      "name": "Niewidzialnosc",
-      "type": "enchantment",
-      "sortid": 44,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "niewidzialnosc"
-    },
-    {
       "name": "TntyMobplayerCollidesBlock",
       "type": "procedure",
       "sortid": 45,
@@ -798,7 +789,6 @@
       "biome.lotmod.lotmod": "Lotmod",
       "block.lotmod.tntexploder": "Tntexploder",
       "block.lotmod.stolik": "Stolik",
-      "enchantment.lotmod.niewidzialnosc": "Niewidzialnosc",
       "entity.lotmod.programig": "Programig",
       "item.lotmod.programig_spawn_egg": "Programig Spawn Egg",
       "item.lotmod.dinnerbone_spawn_egg": "jeb_ Spawn Egg",
@@ -837,7 +827,6 @@
       "biome.lotmod.lotmod": "Lotmod",
       "block.lotmod.tntexploder": "Tntexploder",
       "block.lotmod.stolik": "Stolik",
-      "enchantment.lotmod.niewidzialnosc": "Niewidzialnosc",
       "entity.lotmod.programig": "Programig",
       "item.lotmod.programig_spawn_egg": "Programig Spawn Egg",
       "item.lotmod.dinnerbone_spawn_egg": "jeb_ Spawn Egg",
