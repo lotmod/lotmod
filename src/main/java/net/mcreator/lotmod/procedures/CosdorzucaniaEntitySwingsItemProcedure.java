@@ -46,12 +46,10 @@ public class CosdorzucaniaEntitySwingsItemProcedure extends LotmodModElements.Mo
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		for (int index0 = 0; index0 < (int) (Math.random()); index0++) {
-			world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
-			if (entity instanceof PlayerEntity) {
-				((PlayerEntity) entity).abilities.disableDamage = (true);
-				((PlayerEntity) entity).sendPlayerAbilities();
-			}
+		if (entity instanceof PlayerEntity) {
+			((PlayerEntity) entity).abilities.disableDamage = (true);
+			((PlayerEntity) entity).sendPlayerAbilities();
 		}
+		world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 	}
 }

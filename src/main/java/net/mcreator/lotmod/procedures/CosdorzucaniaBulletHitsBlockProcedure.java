@@ -5,7 +5,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.state.IProperty;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Block;
 
 import net.mcreator.lotmod.LotmodModElements;
 
@@ -42,9 +41,6 @@ public class CosdorzucaniaBulletHitsBlockProcedure extends LotmodModElements.Mod
 		double y = dependencies.get("y") instanceof Integer ? (int) dependencies.get("y") : (double) dependencies.get("y");
 		double z = dependencies.get("z") instanceof Integer ? (int) dependencies.get("z") : (double) dependencies.get("z");
 		IWorld world = (IWorld) dependencies.get("world");
-		world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
-		Block.spawnDrops(world.getBlockState(new BlockPos((int) x, (int) y, (int) z)), world.getWorld(), new BlockPos((int) x, (int) y, (int) z));
-		world.destroyBlock(new BlockPos((int) x, (int) y, (int) z), false);
 		{
 			BlockPos _bp = new BlockPos((int) x, (int) y, (int) z);
 			BlockState _bs = Blocks.WITHER_ROSE.getDefaultState();
