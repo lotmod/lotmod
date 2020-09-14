@@ -31,7 +31,7 @@ public class PowrotKeyBinding extends LotmodModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public PowrotKeyBinding(LotmodModElements instance) {
-		super(instance, 35);
+		super(instance, 43);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

@@ -25,7 +25,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class TntmocneOnKeyPressedProcedure extends LotmodModElements.ModElement {
 	public TntmocneOnKeyPressedProcedure(LotmodModElements instance) {
-		super(instance, 31);
+		super(instance, 40);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

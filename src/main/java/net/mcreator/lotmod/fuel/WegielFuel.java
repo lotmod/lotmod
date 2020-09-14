@@ -13,7 +13,7 @@ import net.mcreator.lotmod.LotmodModElements;
 @LotmodModElements.ModElement.Tag
 public class WegielFuel extends LotmodModElements.ModElement {
 	public WegielFuel(LotmodModElements instance) {
-		super(instance, 46);
+		super(instance, 53);
 		MinecraftForge.EVENT_BUS.register(this);
 	}
 

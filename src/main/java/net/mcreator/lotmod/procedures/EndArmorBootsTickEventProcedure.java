@@ -13,7 +13,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class EndArmorBootsTickEventProcedure extends LotmodModElements.ModElement {
 	public EndArmorBootsTickEventProcedure(LotmodModElements instance) {
-		super(instance, 6);
+		super(instance, 20);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

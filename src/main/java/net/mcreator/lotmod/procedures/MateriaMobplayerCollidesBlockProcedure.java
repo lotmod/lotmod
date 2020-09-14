@@ -10,7 +10,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class MateriaMobplayerCollidesBlockProcedure extends LotmodModElements.ModElement {
 	public MateriaMobplayerCollidesBlockProcedure(LotmodModElements instance) {
-		super(instance, 15);
+		super(instance, 28);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -18,7 +18,7 @@
     {
       "name": "EndArmorHelmetRecipe",
       "type": "recipe",
-      "sortid": 2,
+      "sortid": 16,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -26,7 +26,7 @@
     {
       "name": "EndArmorBodyRecipe",
       "type": "recipe",
-      "sortid": 3,
+      "sortid": 17,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -34,7 +34,7 @@
     {
       "name": "EndArmorLeggingsRecipe",
       "type": "recipe",
-      "sortid": 4,
+      "sortid": 18,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -42,7 +42,7 @@
     {
       "name": "EndArmorBootsRecipe",
       "type": "recipe",
-      "sortid": 5,
+      "sortid": 19,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -50,7 +50,7 @@
     {
       "name": "EndArmorBootsTickEvent",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 20,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -82,7 +82,7 @@
     {
       "name": "Lot",
       "type": "dimension",
-      "sortid": 7,
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -90,7 +90,7 @@
     {
       "name": "Lotmod",
       "type": "biome",
-      "sortid": 8,
+      "sortid": 21,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -98,7 +98,7 @@
     {
       "name": "Kamien",
       "type": "gun",
-      "sortid": 9,
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -106,7 +106,7 @@
     {
       "name": "Kamienrecp",
       "type": "recipe",
-      "sortid": 10,
+      "sortid": 22,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -114,7 +114,7 @@
     {
       "name": "LatanieOnKeyPressed",
       "type": "procedure",
-      "sortid": 11,
+      "sortid": 23,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -138,7 +138,7 @@
     {
       "name": "Latanie",
       "type": "keybind",
-      "sortid": 11,
+      "sortid": 24,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -146,7 +146,7 @@
     {
       "name": "Lotmodcr",
       "type": "tab",
-      "sortid": 12,
+      "sortid": 25,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -154,7 +154,7 @@
     {
       "name": "KamienBulletHitsBlock",
       "type": "procedure",
-      "sortid": 13,
+      "sortid": 26,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -170,7 +170,7 @@
     {
       "name": "Khjghk",
       "type": "recipe",
-      "sortid": 14,
+      "sortid": 27,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -178,7 +178,7 @@
     {
       "name": "MateriaMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 15,
+      "sortid": 28,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -194,7 +194,7 @@
     {
       "name": "Materia",
       "type": "fluid",
-      "sortid": 15,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -202,7 +202,7 @@
     {
       "name": "Portallot",
       "type": "structure",
-      "sortid": 16,
+      "sortid": 29,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -210,7 +210,7 @@
     {
       "name": "Potwor",
       "type": "mob",
-      "sortid": 17,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -218,7 +218,7 @@
     {
       "name": "Osadnik",
       "type": "gui",
-      "sortid": 18,
+      "sortid": 30,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -226,7 +226,7 @@
     {
       "name": "LatanieOnKeyPressedgui",
       "type": "procedure",
-      "sortid": 19,
+      "sortid": 31,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -258,7 +258,7 @@
     {
       "name": "Stolik",
       "type": "block",
-      "sortid": 20,
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -266,7 +266,7 @@
     {
       "name": "Stoloig",
       "type": "procedure",
-      "sortid": 21,
+      "sortid": 32,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -282,7 +282,7 @@
     {
       "name": "Programig",
       "type": "mob",
-      "sortid": 22,
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -290,7 +290,7 @@
     {
       "name": "Wiezadol",
       "type": "structure",
-      "sortid": 23,
+      "sortid": 33,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -298,7 +298,7 @@
     {
       "name": "Kilofy",
       "type": "tool",
-      "sortid": 24,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -306,7 +306,7 @@
     {
       "name": "Multio",
       "type": "recipe",
-      "sortid": 26,
+      "sortid": 34,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -314,7 +314,7 @@
     {
       "name": "Nowewymiary",
       "type": "achievement",
-      "sortid": 27,
+      "sortid": 35,
       "compiles": true,
       "locked_code": false,
       "ids": {}
@@ -322,7 +322,7 @@
     {
       "name": "KowiatekPlantRightClicked",
       "type": "procedure",
-      "sortid": 28,
+      "sortid": 36,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -339,7 +339,7 @@
     {
       "name": "Kowiatek",
       "type": "plant",
-      "sortid": 28,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -348,7 +348,7 @@
     {
       "name": "Tnt2356",
       "type": "procedure",
-      "sortid": 29,
+      "sortid": 37,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -377,7 +377,7 @@
     {
       "name": "Tnt34",
       "type": "procedure",
-      "sortid": 30,
+      "sortid": 38,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -406,7 +406,7 @@
     {
       "name": "Tnt",
       "type": "gui",
-      "sortid": 29,
+      "sortid": 39,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -415,7 +415,7 @@
     {
       "name": "TntmocneOnKeyPressed",
       "type": "procedure",
-      "sortid": 31,
+      "sortid": 40,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -448,7 +448,7 @@
     {
       "name": "TntmocneOnKeyReleased",
       "type": "procedure",
-      "sortid": 32,
+      "sortid": 41,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -465,7 +465,7 @@
     {
       "name": "Tntexploder",
       "type": "block",
-      "sortid": 33,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -474,7 +474,7 @@
     {
       "name": "PowrotOnKeyPressed",
       "type": "procedure",
-      "sortid": 35,
+      "sortid": 42,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -507,7 +507,7 @@
     {
       "name": "Powrot",
       "type": "keybind",
-      "sortid": 35,
+      "sortid": 43,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -516,7 +516,7 @@
     {
       "name": "KilofyRightClickedInAir",
       "type": "procedure",
-      "sortid": 36,
+      "sortid": 44,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -533,7 +533,7 @@
     {
       "name": "Dinnerbone",
       "type": "mob",
-      "sortid": 37,
+      "sortid": 11,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -542,7 +542,7 @@
     {
       "name": "Szybkiepodrorze",
       "type": "dimension",
-      "sortid": 38,
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -551,7 +551,7 @@
     {
       "name": "SzybkiepodozewlacznaiOnKeyPressed",
       "type": "procedure",
-      "sortid": 39,
+      "sortid": 45,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -568,7 +568,7 @@
     {
       "name": "SzybkiepodozewlacznaiOnKeyReleased",
       "type": "procedure",
-      "sortid": 40,
+      "sortid": 46,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -585,7 +585,7 @@
     {
       "name": "Szybkiepodozewlacznai",
       "type": "keybind",
-      "sortid": 39,
+      "sortid": 47,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -594,7 +594,7 @@
     {
       "name": "SzybkiepodrorzePlayerLeavesDimension",
       "type": "procedure",
-      "sortid": 41,
+      "sortid": 48,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -611,7 +611,7 @@
     {
       "name": "FlyCommandExecuted",
       "type": "procedure",
-      "sortid": 42,
+      "sortid": 49,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -644,7 +644,7 @@
     {
       "name": "Fly",
       "type": "command",
-      "sortid": 42,
+      "sortid": 50,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -653,7 +653,7 @@
     {
       "name": "SpawnerRightClickedInAir",
       "type": "procedure",
-      "sortid": 43,
+      "sortid": 51,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -682,7 +682,7 @@
     {
       "name": "Spawner",
       "type": "item",
-      "sortid": 43,
+      "sortid": 13,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -691,7 +691,7 @@
     {
       "name": "TntyMobplayerCollidesBlock",
       "type": "procedure",
-      "sortid": 45,
+      "sortid": 52,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -720,7 +720,7 @@
     {
       "name": "Tnty",
       "type": "fluid",
-      "sortid": 45,
+      "sortid": 14,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -729,7 +729,7 @@
     {
       "name": "Wegiel",
       "type": "fuel",
-      "sortid": 46,
+      "sortid": 53,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -738,7 +738,7 @@
     {
       "name": "DirtswordToolInInventoryTick",
       "type": "procedure",
-      "sortid": 47,
+      "sortid": 54,
       "compiles": true,
       "locked_code": false,
       "ids": {},
@@ -755,11 +755,82 @@
     {
       "name": "Dirtsword",
       "type": "tool",
-      "sortid": 47,
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "dirtsword"
+    },
+    {
+      "name": "CosdorzucaniaEntitySwingsItem",
+      "type": "procedure",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosdorzucania_entity_swings_item",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "CosdorzucaniaBulletHitsBlock",
+      "type": "procedure",
+      "sortid": 56,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosdorzucania_bullet_hits_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Cosdorzucania",
+      "type": "gun",
+      "sortid": 55,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "cosdorzucania"
     }
   ],
   "variable_elements": [],
@@ -769,8 +840,8 @@
       "item.lotmod.potwor": "Potwor Spawn Egg",
       "itemGroup.tablotmodcr": "Lotmodcr",
       "block.lotmod.kowiatek": "Kowiatek",
-      "item.lotmod.endarmor_boots": "End-Boots",
-      "item.lotmod.endarmor_leggings": "End-Leggings",
+      "item.lotmod.endarmor_boots": "End Boots",
+      "item.lotmod.endarmor_leggings": "End Leggings",
       "item.lotmod.kamien": "Kamien",
       "key.mcreator.powrot": "Powrot",
       "item.lotmod.endarmorbody": "End-Chestplate",
@@ -783,7 +854,7 @@
       "block.lotmod.tntexploder": "Tntexploder",
       "block.lotmod.stolik": "Stolik",
       "entity.lotmod.programig": "Programig",
-      "item.lotmod.programig_spawn_egg": "Programig-Spawn-Egg",
+      "item.lotmod.programig_spawn_egg": "Programig Spawn Egg",
       "item.lotmod.dinnerbone_spawn_egg": "jeb_ Spawn Egg",
       "fluid.materia": "Materia",
       "item.lotmod.potwor_spawn_egg": "Potwor Spawn Egg",
@@ -800,6 +871,7 @@
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "item.lotmod.endarmor_helmet": "End Helmet",
       "item.lotmod.dirtsword": "Dirtsword",
+      "item.lotmod.cosdorzucania": "Cos do rzucania",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"

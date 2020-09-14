@@ -24,7 +24,7 @@ public class DirtswordItem extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:dirtsword")
 	public static final Item block = null;
 	public DirtswordItem(LotmodModElements instance) {
-		super(instance, 47);
+		super(instance, 15);
 	}
 
 	@Override

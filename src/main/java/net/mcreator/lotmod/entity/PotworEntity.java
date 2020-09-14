@@ -62,7 +62,7 @@ public class PotworEntity extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:entitybulletpotwor")
 	public static final EntityType arrow = null;
 	public PotworEntity(LotmodModElements instance) {
-		super(instance, 17);
+		super(instance, 5);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

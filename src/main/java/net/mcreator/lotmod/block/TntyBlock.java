@@ -44,7 +44,7 @@ public class TntyBlock extends LotmodModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public TntyBlock(LotmodModElements instance) {
-		super(instance, 45);
+		super(instance, 14);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

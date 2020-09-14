@@ -10,7 +10,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class DirtswordToolInInventoryTickProcedure extends LotmodModElements.ModElement {
 	public DirtswordToolInInventoryTickProcedure(LotmodModElements instance) {
-		super(instance, 47);
+		super(instance, 54);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

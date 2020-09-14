@@ -12,7 +12,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class StoloigProcedure extends LotmodModElements.ModElement {
 	public StoloigProcedure(LotmodModElements instance) {
-		super(instance, 21);
+		super(instance, 32);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

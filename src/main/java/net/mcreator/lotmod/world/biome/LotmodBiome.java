@@ -43,7 +43,7 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:lotmod")
 	public static final CustomBiome biome = null;
 	public LotmodBiome(LotmodModElements instance) {
-		super(instance, 8);
+		super(instance, 21);
 	}
 
 	@Override

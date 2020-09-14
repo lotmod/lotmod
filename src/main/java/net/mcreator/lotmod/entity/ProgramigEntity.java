@@ -64,7 +64,7 @@ public class ProgramigEntity extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:entitybulletprogramig")
 	public static final EntityType arrow = null;
 	public ProgramigEntity(LotmodModElements instance) {
-		super(instance, 22);
+		super(instance, 7);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

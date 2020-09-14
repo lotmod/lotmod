@@ -20,7 +20,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class FlyCommandExecutedProcedure extends LotmodModElements.ModElement {
 	public FlyCommandExecutedProcedure(LotmodModElements instance) {
-		super(instance, 42);
+		super(instance, 49);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

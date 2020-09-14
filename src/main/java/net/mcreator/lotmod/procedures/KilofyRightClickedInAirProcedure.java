@@ -10,7 +10,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class KilofyRightClickedInAirProcedure extends LotmodModElements.ModElement {
 	public KilofyRightClickedInAirProcedure(LotmodModElements instance) {
-		super(instance, 36);
+		super(instance, 44);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

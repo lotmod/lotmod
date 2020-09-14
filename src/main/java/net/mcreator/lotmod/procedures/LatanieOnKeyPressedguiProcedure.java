@@ -24,7 +24,7 @@ import io.netty.buffer.Unpooled;
 @LotmodModElements.ModElement.Tag
 public class LatanieOnKeyPressedguiProcedure extends LotmodModElements.ModElement {
 	public LatanieOnKeyPressedguiProcedure(LotmodModElements instance) {
-		super(instance, 19);
+		super(instance, 31);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

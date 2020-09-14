@@ -19,7 +19,7 @@ import net.minecraft.util.ActionResultType;
 import net.minecraft.util.ActionResult;
 import net.minecraft.network.IPacket;
 import net.minecraft.item.UseAction;
-import net.minecraft.item.Items;
+import net.minecraft.item.ShootableItem;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Item;
 import net.minecraft.entity.projectile.AbstractArrowEntity;
@@ -32,8 +32,10 @@ import net.minecraft.entity.EntityClassification;
 import net.minecraft.entity.Entity;
 import net.minecraft.client.renderer.entity.SpriteRenderer;
 import net.minecraft.client.Minecraft;
+import net.minecraft.block.Blocks;
 
-import net.mcreator.lotmod.procedures.KamienBulletHitsBlockProcedure;
+import net.mcreator.lotmod.procedures.CosdorzucaniaEntitySwingsItemProcedure;
+import net.mcreator.lotmod.procedures.CosdorzucaniaBulletHitsBlockProcedure;
 import net.mcreator.lotmod.itemgroup.LotmodcrItemGroup;
 import net.mcreator.lotmod.LotmodModElements;
 
@@ -42,13 +44,13 @@ import java.util.Map;
 import java.util.HashMap;
 
 @LotmodModElements.ModElement.Tag
-public class KamienItem extends LotmodModElements.ModElement {
-	@ObjectHolder("lotmod:kamien")
+public class CosdorzucaniaItem extends LotmodModElements.ModElement {
+	@ObjectHolder("lotmod:cosdorzucania")
 	public static final Item block = null;
-	@ObjectHolder("lotmod:entitybulletkamien")
+	@ObjectHolder("lotmod:entitybulletcosdorzucania")
 	public static final EntityType arrow = null;
-	public KamienItem(LotmodModElements instance) {
-		super(instance, 3);
+	public CosdorzucaniaItem(LotmodModElements instance) {
+		super(instance, 55);
 	}
 
 	@Override
@@ -56,7 +58,7 @@ public class KamienItem extends LotmodModElements.ModElement {
 		elements.items.add(() -> new ItemRanged());
 		elements.entities.add(() -> (EntityType.Builder.<ArrowCustomEntity>create(ArrowCustomEntity::new, EntityClassification.MISC)
 				.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).setCustomClientFactory(ArrowCustomEntity::new)
-				.size(0.5f, 0.5f)).build("entitybulletkamien").setRegistryName("entitybulletkamien"));
+				.size(0.5f, 0.5f)).build("entitybulletcosdorzucania").setRegistryName("entitybulletcosdorzucania"));
 	}
 
 	@Override
@@ -67,8 +69,8 @@ public class KamienItem extends LotmodModElements.ModElement {
 	}
 	public static class ItemRanged extends Item {
 		public ItemRanged() {
-			super(new Item.Properties().group(LotmodcrItemGroup.tab).maxDamage(240));
-			setRegistryName("kamien");
+			super(new Item.Properties().group(LotmodcrItemGroup.tab).maxDamage(182));
+			setRegistryName("cosdorzucania");
 		}
 
 		@Override
@@ -95,9 +97,37 @@ public class KamienItem extends LotmodModElements.ModElement {
 				double y = entity.getPosY();
 				double z = entity.getPosZ();
 				if (true) {
-					ArrowCustomEntity entityarrow = shoot(world, entity, random, 1f, 9.299999999999999, 5);
-					itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
-					entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.DISALLOWED;
+					ItemStack stack = ShootableItem.getHeldAmmo(entity,
+							e -> e.getItem() == new ItemStack(Blocks.STRUCTURE_VOID, (int) (1)).getItem());
+					if (stack == ItemStack.EMPTY) {
+						for (int i = 0; i < entity.inventory.mainInventory.size(); i++) {
+							ItemStack teststack = entity.inventory.mainInventory.get(i);
+							if (teststack != null && teststack.getItem() == new ItemStack(Blocks.STRUCTURE_VOID, (int) (1)).getItem()) {
+								stack = teststack;
+								break;
+							}
+						}
+					}
+					if (entity.abilities.isCreativeMode || stack != ItemStack.EMPTY) {
+						ArrowCustomEntity entityarrow = shoot(world, entity, random, 1.1f, 5, 5);
+						itemstack.damageItem(1, entity, e -> e.sendBreakAnimation(entity.getActiveHand()));
+						if (entity.abilities.isCreativeMode) {
+							entityarrow.pickupStatus = AbstractArrowEntity.PickupStatus.CREATIVE_ONLY;
+						} else {
+							if (new ItemStack(Blocks.STRUCTURE_VOID, (int) (1)).isDamageable()) {
+								if (stack.attemptDamageItem(1, random, entity)) {
+									stack.shrink(1);
+									stack.setDamage(0);
+									if (stack.isEmpty())
+										entity.inventory.deleteStack(stack);
+								}
+							} else {
+								stack.shrink(1);
+								if (stack.isEmpty())
+									entity.inventory.deleteStack(stack);
+							}
+						}
+					}
 				}
 			}
 		}
@@ -129,18 +159,51 @@ public class KamienItem extends LotmodModElements.ModElement {
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public ItemStack getItem() {
-			return new ItemStack(Items.END_CRYSTAL, (int) (1));
+			return new ItemStack(Blocks.IRON_TRAPDOOR, (int) (1));
 		}
 
 		@Override
 		protected ItemStack getArrowStack() {
-			return null;
+			return new ItemStack(Blocks.STRUCTURE_VOID, (int) (1));
+		}
+
+		@Override
+		public void onCollideWithPlayer(PlayerEntity entity) {
+			super.onCollideWithPlayer(entity);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				CosdorzucaniaEntitySwingsItemProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
 		protected void arrowHit(LivingEntity entity) {
 			super.arrowHit(entity);
 			entity.setArrowCountInEntity(entity.getArrowCountInEntity() - 1);
+			Entity sourceentity = this.getShooter();
+			double x = this.getPosX();
+			double y = this.getPosY();
+			double z = this.getPosZ();
+			World world = this.world;
+			{
+				Map<String, Object> $_dependencies = new HashMap<>();
+				$_dependencies.put("entity", entity);
+				$_dependencies.put("x", x);
+				$_dependencies.put("y", y);
+				$_dependencies.put("z", z);
+				$_dependencies.put("world", world);
+				CosdorzucaniaEntitySwingsItemProcedure.executeProcedure($_dependencies);
+			}
 		}
 
 		@Override
@@ -154,8 +217,11 @@ public class KamienItem extends LotmodModElements.ModElement {
 			if (this.inGround) {
 				{
 					Map<String, Object> $_dependencies = new HashMap<>();
-					$_dependencies.put("entity", entity);
-					KamienBulletHitsBlockProcedure.executeProcedure($_dependencies);
+					$_dependencies.put("x", x);
+					$_dependencies.put("y", y);
+					$_dependencies.put("z", z);
+					$_dependencies.put("world", world);
+					CosdorzucaniaBulletHitsBlockProcedure.executeProcedure($_dependencies);
 				}
 				this.remove();
 			}
@@ -165,15 +231,16 @@ public class KamienItem extends LotmodModElements.ModElement {
 		ArrowCustomEntity entityarrow = new ArrowCustomEntity(arrow, entity, world);
 		entityarrow.shoot(entity.getLookVec().x, entity.getLookVec().y, entity.getLookVec().z, power * 2, 0);
 		entityarrow.setSilent(true);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
 		entityarrow.setDamage(damage);
 		entityarrow.setKnockbackStrength(knockback);
+		entityarrow.setFire(100);
 		world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bass")),
 				SoundCategory.PLAYERS, 1, 1f / (random.nextFloat() * 0.5f + 1) + (power / 2));
 		return entityarrow;
 	}
@@ -183,17 +250,18 @@ public class KamienItem extends LotmodModElements.ModElement {
 		double d0 = target.getPosY() + (double) target.getEyeHeight() - 1.1;
 		double d1 = target.getPosX() - entity.getPosX();
 		double d3 = target.getPosZ() - entity.getPosZ();
-		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1f * 2, 12.0F);
+		entityarrow.shoot(d1, d0 - entityarrow.getPosY() + (double) MathHelper.sqrt(d1 * d1 + d3 * d3) * 0.2F, d3, 1.1f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setDamage(9.299999999999999);
+		entityarrow.setDamage(5);
 		entityarrow.setKnockbackStrength(5);
-		entityarrow.setIsCritical(false);
+		entityarrow.setIsCritical(true);
+		entityarrow.setFire(100);
 		entity.world.addEntity(entityarrow);
 		double x = entity.getPosX();
 		double y = entity.getPosY();
 		double z = entity.getPosZ();
 		entity.world.playSound((PlayerEntity) null, (double) x, (double) y, (double) z,
-				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.arrow.shoot")),
+				(net.minecraft.util.SoundEvent) ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("block.note_block.bass")),
 				SoundCategory.PLAYERS, 1, 1f / (new Random().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}

@@ -11,7 +11,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class Tnt34Procedure extends LotmodModElements.ModElement {
 	public Tnt34Procedure(LotmodModElements instance) {
-		super(instance, 30);
+		super(instance, 38);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

@@ -23,7 +23,7 @@ import com.mojang.brigadier.arguments.StringArgumentType;
 @LotmodModElements.ModElement.Tag
 public class FlyCommand extends LotmodModElements.ModElement {
 	public FlyCommand(LotmodModElements instance) {
-		super(instance, 42);
+		super(instance, 50);
 	}
 
 	@Override

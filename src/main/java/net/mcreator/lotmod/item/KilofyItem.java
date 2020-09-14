@@ -23,7 +23,7 @@ public class KilofyItem extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:kilofy")
 	public static final Item block = null;
 	public KilofyItem(LotmodModElements instance) {
-		super(instance, 24);
+		super(instance, 8);
 	}
 
 	@Override

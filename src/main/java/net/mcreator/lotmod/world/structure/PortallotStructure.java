@@ -31,7 +31,7 @@ import java.util.Random;
 @LotmodModElements.ModElement.Tag
 public class PortallotStructure extends LotmodModElements.ModElement {
 	public PortallotStructure(LotmodModElements instance) {
-		super(instance, 16);
+		super(instance, 29);
 	}
 
 	@Override

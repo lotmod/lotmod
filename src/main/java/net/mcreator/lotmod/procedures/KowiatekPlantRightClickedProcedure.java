@@ -12,7 +12,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class KowiatekPlantRightClickedProcedure extends LotmodModElements.ModElement {
 	public KowiatekPlantRightClickedProcedure(LotmodModElements instance) {
-		super(instance, 28);
+		super(instance, 36);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {
