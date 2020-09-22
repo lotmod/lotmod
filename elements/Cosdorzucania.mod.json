@@ -20,13 +20,13 @@
       "value": "block.note.bass"
     },
     "hasGlow": false,
-    "enableMeleeDamage": false,
-    "damageVsEntity": 0.4,
-    "bulletPower": 1.1,
+    "enableMeleeDamage": true,
+    "damageVsEntity": 6.8999999999999995,
+    "bulletPower": 1.0,
     "bulletDamage": 5.0,
     "bulletKnockback": 5,
-    "bulletParticles": true,
-    "bulletIgnitesFire": true,
+    "bulletParticles": false,
+    "bulletIgnitesFire": false,
     "bulletItemTexture": {
       "value": "Blocks.IRON_TRAPDOOR"
     },

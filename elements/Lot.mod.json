@@ -32,24 +32,14 @@
       "value": "Blocks.FLOWING_WATER"
     },
     "airColor": {
-      "value": -4138753,
-      "frgbvalue": [
-        0.753,
-        0.847,
-        1.0
-      ],
-      "fvalue": [
-        0.753,
-        0.847,
-        1.0
-      ],
-      "falpha": 1.0
+      "value": -13395457,
+      "falpha": 0.0
     },
     "canRespawnHere": false,
     "hasFog": false,
     "hasWeather": true,
-    "isDark": false,
-    "doesWaterVaporize": false,
+    "isDark": true,
+    "doesWaterVaporize": true,
     "sleepResult": "ALLOW",
     "hasSkyLight": false,
     "imitateOverworldBehaviour": true

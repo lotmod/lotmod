@@ -6,24 +6,24 @@
       "value": "Blocks.DIAMOND_BLOCK"
     },
     "undergroundBlock": {
-      "value": "Blocks.LAPIS_BLOCK"
+      "value": "Blocks.ICE"
     },
     "generateLakes": true,
     "treeType": 1,
     "vanillaTreeType": "Default",
-    "minHeight": 86,
+    "minHeight": 51,
     "spawnVines": true,
     "treeVines": {
-      "value": "Blocks.SLIME_BLOCK"
+      "value": "Blocks.PISTON_EXTENSION"
     },
     "treeStem": {
-      "value": "Blocks.QUARTZ_BLOCK#2"
+      "value": "CUSTOM:Diamondlog"
     },
     "treeBranch": {
-      "value": "Blocks.MAGMA"
+      "value": "Blocks.BLUE_GLAZED_TERRACOTTA"
     },
     "treeFruits": {
-      "value": "Blocks.DIRT#0"
+      "value": "Blocks.LIGHT_BLUE_BED"
     },
     "airColor": {
       "value": -5916161,
@@ -38,7 +38,7 @@
       "falpha": 0.0
     },
     "treesPerChunk": 1,
-    "grassPerChunk": 0,
+    "grassPerChunk": 2,
     "flowersPerChunk": 0,
     "mushroomsPerChunk": 0,
     "bigMushroomsChunk": 0,
@@ -52,8 +52,8 @@
     "heightVariation": 0.2,
     "spawnBiome": false,
     "biomeWeight": 21,
-    "biomeType": "COOL",
-    "biomeCategory": "NONE",
+    "biomeType": "ICY",
+    "biomeCategory": "OCEAN",
     "parent": {
       "value": "No parent"
     },

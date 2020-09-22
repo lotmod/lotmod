@@ -822,6 +822,44 @@
       "locked_code": false,
       "ids": {},
       "registry_name": "cosdorzucania"
+    },
+    {
+      "name": "DiamondlogBlockDestroyedByExplosion",
+      "type": "procedure",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondlog_block_destroyed_by_explosion",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Diamondlog",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondlog"
     }
   ],
   "variable_elements": [],
@@ -829,6 +867,7 @@
   "language_map": {
     "pl_pl": {
       "item.lotmod.potwor": "Potwor Spawn Egg",
+      "block.lotmod.diamondlog": "Diamondlog",
       "itemGroup.tablotmodcr": "Lotmodcr",
       "block.lotmod.kowiatek": "Kowiatek",
       "item.lotmod.endarmor_boots": "End Boots",
@@ -862,12 +901,14 @@
       "key.mcreator.latanie": "dom",
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "item.lotmod.endarmor_helmet": "End Helmet",
+      "item.lotmod.cosdorzucania": "Cos do rzucania",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"
     },
     "en_us": {
       "item.lotmod.potwor": "Potwor Spawn Egg",
+      "block.lotmod.diamondlog": "Diamondlog",
       "itemGroup.tablotmodcr": "Lotmodcr",
       "block.lotmod.kowiatek": "Kowiatek",
       "item.lotmod.endarmor_boots": "End Boots",
@@ -901,6 +942,7 @@
       "key.mcreator.latanie": "dom",
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "item.lotmod.endarmor_helmet": "End Helmet",
+      "item.lotmod.cosdorzucania": "Cos do rzucania",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"

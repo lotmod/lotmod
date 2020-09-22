@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "lotmod:block/diamondlog"
+    },
+    "facing=north": {
+      "model": "lotmod:block/diamondlog"
+    },
+    "facing=east": {
+      "model": "lotmod:block/diamondlog",
+      "x": 90
+    },
+    "facing=west": {
+      "model": "lotmod:block/diamondlog",
+      "x": 90
+    },
+    "facing=up": {
+      "model": "lotmod:block/diamondlog",
+      "x": 90,
+      "y": 90
+    },
+    "facing=down": {
+      "model": "lotmod:block/diamondlog",
+      "x": 90,
+      "y": 90
+    }
+  }
+}

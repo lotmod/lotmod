@@ -31,6 +31,7 @@ import net.minecraft.block.Blocks;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Block;
 
+import net.mcreator.lotmod.block.DiamondlogBlock;
 import net.mcreator.lotmod.LotmodModElements;
 
 import java.util.Set;
@@ -57,18 +58,20 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 	static class CustomBiome extends Biome {
 		public CustomBiome() {
 			super(new Biome.Builder().downfall(0f).depth(0.1f).scale(0.2f).temperature(0.5f).precipitation(Biome.RainType.NONE)
-					.category(Biome.Category.NONE).waterColor(-14329397).waterFogColor(-14329397)
+					.category(Biome.Category.OCEAN).waterColor(-14329397).waterFogColor(-14329397)
 					.surfaceBuilder(SurfaceBuilder.DEFAULT, new SurfaceBuilderConfig(Blocks.DIAMOND_BLOCK.getDefaultState(),
-							Blocks.LAPIS_BLOCK.getDefaultState(), Blocks.LAPIS_BLOCK.getDefaultState())));
+							Blocks.ICE.getDefaultState(), Blocks.ICE.getDefaultState())));
 			setRegistryName("lotmod");
 			DefaultBiomeFeatures.addCarvers(this);
 			DefaultBiomeFeatures.addStructures(this);
 			DefaultBiomeFeatures.addMonsterRooms(this);
 			DefaultBiomeFeatures.addOres(this);
 			DefaultBiomeFeatures.addLakes(this);
+			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.GRASS_CONFIG)
+					.withPlacement(Placement.COUNT_HEIGHTMAP_DOUBLE.configure(new FrequencyConfig(2))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, new CustomTreeFeature()
-					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(Blocks.QUARTZ_PILLAR.getDefaultState()),
-							new SimpleBlockStateProvider(Blocks.MAGMA_BLOCK.getDefaultState()))).baseHeight(86)
+					.withConfiguration((new BaseTreeFeatureConfig.Builder(new SimpleBlockStateProvider(DiamondlogBlock.block.getDefaultState()),
+							new SimpleBlockStateProvider(Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState()))).baseHeight(51)
 									.setSapling((net.minecraftforge.common.IPlantable) Blocks.JUNGLE_SAPLING).build())
 					.withPlacement(Placement.COUNT_EXTRA_HEIGHTMAP.configure(new AtSurfaceWithExtraConfig(1, 0.1F, 1))));
 			addFeature(GenerationStage.Decoration.VEGETAL_DECORATION, Feature.RANDOM_PATCH.withConfiguration(DefaultBiomeFeatures.SUGAR_CANE_CONFIG)
@@ -76,7 +79,7 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 			addFeature(GenerationStage.Decoration.UNDERGROUND_ORES,
 					Feature.DISK
 							.withConfiguration(new SphereReplaceConfig(Blocks.SAND.getDefaultState(), 7, 2,
-									Lists.newArrayList(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.LAPIS_BLOCK.getDefaultState())))
+									Lists.newArrayList(Blocks.DIAMOND_BLOCK.getDefaultState(), Blocks.ICE.getDefaultState())))
 							.withPlacement(Placement.COUNT_TOP_SOLID.configure(new FrequencyConfig(8))));
 		}
 
@@ -110,7 +113,7 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 			if (!(worldgen instanceof IWorld))
 				return false;
 			IWorld world = (IWorld) worldgen;
-			int height = rand.nextInt(5) + 86;
+			int height = rand.nextInt(5) + 51;
 			boolean spawnTree = true;
 			if (position.getY() >= 1 && position.getY() + height + 1 <= world.getHeight()) {
 				for (int j = position.getY(); j <= position.getY() + 1 + height; j++) {
@@ -136,13 +139,12 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 				} else {
 					Block ground = world.getBlockState(position.add(0, -1, 0)).getBlock();
 					Block ground2 = world.getBlockState(position.add(0, -2, 0)).getBlock();
-					if (!((ground == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock() || ground == Blocks.LAPIS_BLOCK.getDefaultState().getBlock())
-							&& (ground2 == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock()
-									|| ground2 == Blocks.LAPIS_BLOCK.getDefaultState().getBlock())))
+					if (!((ground == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock() || ground == Blocks.ICE.getDefaultState().getBlock())
+							&& (ground2 == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock() || ground2 == Blocks.ICE.getDefaultState().getBlock())))
 						return false;
 					BlockState state = world.getBlockState(position.down());
 					if (position.getY() < world.getHeight() - height - 1) {
-						setTreeBlockState(changedBlocks, world, position.down(), Blocks.LAPIS_BLOCK.getDefaultState(), bbox);
+						setTreeBlockState(changedBlocks, world, position.down(), Blocks.ICE.getDefaultState(), bbox);
 						for (int genh = position.getY() - 3 + height; genh <= position.getY() + height; genh++) {
 							int i4 = genh - (position.getY() + height);
 							int j1 = (int) (1 - i4 * 0.5);
@@ -153,9 +155,10 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 										BlockPos blockpos = new BlockPos(k1, genh, i2);
 										state = world.getBlockState(blockpos);
 										if (state.getBlock().isAir(state, world, blockpos) || state.getMaterial().blocksMovement()
-												|| state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.SLIME_BLOCK.getDefaultState().getBlock()
-												|| state.getBlock() == Blocks.MAGMA_BLOCK.getDefaultState().getBlock()) {
-											setTreeBlockState(changedBlocks, world, blockpos, Blocks.MAGMA_BLOCK.getDefaultState(), bbox);
+												|| state.isIn(BlockTags.LEAVES)
+												|| state.getBlock() == Blocks.MOVING_PISTON.getDefaultState().getBlock()
+												|| state.getBlock() == Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState().getBlock()) {
+											setTreeBlockState(changedBlocks, world, blockpos, Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState(), bbox);
 										}
 									}
 								}
@@ -164,21 +167,23 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 						for (int genh = 0; genh < height; genh++) {
 							BlockPos genhPos = position.up(genh);
 							state = world.getBlockState(genhPos);
-							setTreeBlockState(changedBlocks, world, genhPos, Blocks.QUARTZ_PILLAR.getDefaultState(), bbox);
+							setTreeBlockState(changedBlocks, world, genhPos, DiamondlogBlock.block.getDefaultState(), bbox);
 							if (state.getBlock().isAir(state, world, genhPos) || state.getMaterial().blocksMovement() || state.isIn(BlockTags.LEAVES)
-									|| state.getBlock() == Blocks.SLIME_BLOCK.getDefaultState().getBlock()
-									|| state.getBlock() == Blocks.MAGMA_BLOCK.getDefaultState().getBlock()) {
+									|| state.getBlock() == Blocks.MOVING_PISTON.getDefaultState().getBlock()
+									|| state.getBlock() == Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState().getBlock()) {
 								if (genh > 0) {
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(-1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.SLIME_BLOCK.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(-1, genh, 0), Blocks.MOVING_PISTON.getDefaultState(),
 												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(1, genh, 0)))
-										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.SLIME_BLOCK.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(1, genh, 0), Blocks.MOVING_PISTON.getDefaultState(),
+												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, -1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.SLIME_BLOCK.getDefaultState(),
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, -1), Blocks.MOVING_PISTON.getDefaultState(),
 												bbox);
 									if (rand.nextInt(3) > 0 && world.isAirBlock(position.add(0, genh, 1)))
-										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.SLIME_BLOCK.getDefaultState(), bbox);
+										setTreeBlockState(changedBlocks, world, position.add(0, genh, 1), Blocks.MOVING_PISTON.getDefaultState(),
+												bbox);
 								}
 							}
 						}
@@ -188,7 +193,8 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 								for (int genz = position.getZ() - k4; genz <= position.getZ() + k4; genz++) {
 									BlockPos bpos = new BlockPos(genx, genh, genz);
 									state = world.getBlockState(bpos);
-									if (state.isIn(BlockTags.LEAVES) || state.getBlock() == Blocks.MAGMA_BLOCK.getDefaultState().getBlock()) {
+									if (state.isIn(BlockTags.LEAVES)
+											|| state.getBlock() == Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState().getBlock()) {
 										BlockPos blockpos1 = bpos.south();
 										BlockPos blockpos2 = bpos.west();
 										BlockPos blockpos3 = bpos.east();
@@ -211,7 +217,7 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 									if (rand.nextInt(4 - hlevel) == 0) {
 										Direction dir = Direction.getOpposite();
 										setTreeBlockState(changedBlocks, world, position.add(dir.getXOffset(), height - 5 + hlevel, dir.getZOffset()),
-												Blocks.DIRT.getDefaultState(), bbox);
+												Blocks.LIGHT_BLUE_BED.getDefaultState(), bbox);
 									}
 								}
 							}
@@ -227,18 +233,18 @@ public class LotmodBiome extends LotmodModElements.ModElement {
 		}
 
 		private void addVines(IWorld world, BlockPos pos, Set<BlockPos> changedBlocks, MutableBoundingBox bbox) {
-			setTreeBlockState(changedBlocks, world, pos, Blocks.SLIME_BLOCK.getDefaultState(), bbox);
+			setTreeBlockState(changedBlocks, world, pos, Blocks.MOVING_PISTON.getDefaultState(), bbox);
 			int i = 5;
 			for (BlockPos blockpos = pos.down(); world.isAirBlock(blockpos) && i > 0; --i) {
-				setTreeBlockState(changedBlocks, world, blockpos, Blocks.SLIME_BLOCK.getDefaultState(), bbox);
+				setTreeBlockState(changedBlocks, world, blockpos, Blocks.MOVING_PISTON.getDefaultState(), bbox);
 				blockpos = blockpos.down();
 			}
 		}
 
 		private boolean canGrowInto(Block blockType) {
-			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == Blocks.QUARTZ_PILLAR.getDefaultState().getBlock()
-					|| blockType == Blocks.MAGMA_BLOCK.getDefaultState().getBlock() || blockType == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock()
-					|| blockType == Blocks.LAPIS_BLOCK.getDefaultState().getBlock();
+			return blockType.getDefaultState().getMaterial() == Material.AIR || blockType == DiamondlogBlock.block.getDefaultState().getBlock()
+					|| blockType == Blocks.BLUE_GLAZED_TERRACOTTA.getDefaultState().getBlock()
+					|| blockType == Blocks.DIAMOND_BLOCK.getDefaultState().getBlock() || blockType == Blocks.ICE.getDefaultState().getBlock();
 		}
 
 		private boolean isReplaceable(IWorld world, BlockPos pos) {

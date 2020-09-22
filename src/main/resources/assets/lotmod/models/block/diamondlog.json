@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "lotmod:blocks/diandlo",
+    "up": "lotmod:blocks/diandlo",
+    "north": "lotmod:blocks/diamolog2",
+    "east": "lotmod:blocks/diamolog2",
+    "south": "lotmod:blocks/diamolog2",
+    "west": "lotmod:blocks/diamolog2",
+    "particle": "lotmod:blocks/diandlo"
+  }
+}

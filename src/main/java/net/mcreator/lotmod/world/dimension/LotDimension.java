@@ -665,14 +665,14 @@ public class LotDimension extends LotmodModElements.ModElement {
 	public static class CustomDimension extends Dimension {
 		private BiomeProviderCustom biomeProviderCustom = null;
 		public CustomDimension(World world, DimensionType type) {
-			super(world, type, 0.5f);
+			super(world, type, 0);
 			this.nether = false;
 		}
 
 		@Override
 		@OnlyIn(Dist.CLIENT)
 		public Vec3d getFogColor(float cangle, float ticks) {
-			return new Vec3d(0.752941176471, 0.847058823529, 1);
+			return new Vec3d(0.2, 0.6, 1);
 		}
 
 		@Override
@@ -716,7 +716,7 @@ public class LotDimension extends LotmodModElements.ModElement {
 
 		@Override
 		public boolean doesWaterVaporize() {
-			return false;
+			return true;
 		}
 
 		@Override /**
