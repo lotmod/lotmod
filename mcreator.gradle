@@ -1,0 +1,9 @@
+task mcreatorLink(type: DefaultTask) {
+  ant.mkdir(dir: 'lib/');
+  ant.get(src: 'https://mcreator.net/link/download/dev_1.15.2', dest: 'lib/mcreator_link.jar', skipexisting: 'true');
+}
+
+compileJava.dependsOn mcreatorLink
+
+dependencies { compile files("lib/mcreator_link.jar") }
+
