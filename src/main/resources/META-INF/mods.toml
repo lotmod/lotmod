@@ -17,11 +17,5 @@ authors="User, MCreator"
     side="BOTH"
 
 
-[[dependencies.lotmod]]
-    modId="mcreator_link"
-    mandatory=true
-    versionRange="[0,)"
-    ordering="NONE"
-    side="BOTH"
 
 
