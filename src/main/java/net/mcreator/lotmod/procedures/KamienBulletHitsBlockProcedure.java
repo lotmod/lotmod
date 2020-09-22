@@ -10,7 +10,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class KamienBulletHitsBlockProcedure extends LotmodModElements.ModElement {
 	public KamienBulletHitsBlockProcedure(LotmodModElements instance) {
-		super(instance, 26);
+		super(instance, 13);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

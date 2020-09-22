@@ -58,7 +58,7 @@ public class KowiatekBlock extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:kowiatek")
 	public static final Block block = null;
 	public KowiatekBlock(LotmodModElements instance) {
-		super(instance, 9);
+		super(instance, 28);
 	}
 
 	@Override

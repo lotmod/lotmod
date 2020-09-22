@@ -25,7 +25,7 @@ public class SpawnerItem extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:spawner")
 	public static final Item block = null;
 	public SpawnerItem(LotmodModElements instance) {
-		super(instance, 13);
+		super(instance, 43);
 	}
 
 	@Override

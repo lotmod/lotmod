@@ -106,7 +106,7 @@ public class SzybkiepodrorzeDimension extends LotmodModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public SzybkiepodrorzeDimension(LotmodModElements instance) {
-		super(instance, 12);
+		super(instance, 38);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

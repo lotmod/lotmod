@@ -13,7 +13,7 @@ import net.mcreator.lotmod.LotmodModElements;
 @LotmodModElements.ModElement.Tag
 public class LotmodcrItemGroup extends LotmodModElements.ModElement {
 	public LotmodcrItemGroup(LotmodModElements instance) {
-		super(instance, 25);
+		super(instance, 12);
 	}
 
 	@Override

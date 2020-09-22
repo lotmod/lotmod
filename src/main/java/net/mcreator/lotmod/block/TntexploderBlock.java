@@ -41,7 +41,7 @@ public class TntexploderBlock extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:tntexploder")
 	public static final Block block = null;
 	public TntexploderBlock(LotmodModElements instance) {
-		super(instance, 10);
+		super(instance, 33);
 	}
 
 	@Override

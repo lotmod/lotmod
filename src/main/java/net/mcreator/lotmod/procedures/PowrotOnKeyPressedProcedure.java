@@ -23,7 +23,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class PowrotOnKeyPressedProcedure extends LotmodModElements.ModElement {
 	public PowrotOnKeyPressedProcedure(LotmodModElements instance) {
-		super(instance, 42);
+		super(instance, 35);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

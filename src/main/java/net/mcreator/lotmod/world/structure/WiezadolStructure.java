@@ -32,7 +32,7 @@ import java.util.Random;
 @LotmodModElements.ModElement.Tag
 public class WiezadolStructure extends LotmodModElements.ModElement {
 	public WiezadolStructure(LotmodModElements instance) {
-		super(instance, 33);
+		super(instance, 23);
 	}
 
 	@Override

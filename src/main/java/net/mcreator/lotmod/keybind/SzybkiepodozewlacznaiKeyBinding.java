@@ -31,7 +31,7 @@ public class SzybkiepodozewlacznaiKeyBinding extends LotmodModElements.ModElemen
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public SzybkiepodozewlacznaiKeyBinding(LotmodModElements instance) {
-		super(instance, 47);
+		super(instance, 39);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

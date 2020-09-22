@@ -18,7 +18,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class SpawnerRightClickedInAirProcedure extends LotmodModElements.ModElement {
 	public SpawnerRightClickedInAirProcedure(LotmodModElements instance) {
-		super(instance, 51);
+		super(instance, 43);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

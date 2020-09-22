@@ -11,7 +11,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class TntyMobplayerCollidesBlockProcedure extends LotmodModElements.ModElement {
 	public TntyMobplayerCollidesBlockProcedure(LotmodModElements instance) {
-		super(instance, 52);
+		super(instance, 45);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

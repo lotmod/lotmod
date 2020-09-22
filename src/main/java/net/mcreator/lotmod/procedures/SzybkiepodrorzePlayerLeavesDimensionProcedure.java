@@ -12,7 +12,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class SzybkiepodrorzePlayerLeavesDimensionProcedure extends LotmodModElements.ModElement {
 	public SzybkiepodrorzePlayerLeavesDimensionProcedure(LotmodModElements instance) {
-		super(instance, 48);
+		super(instance, 41);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

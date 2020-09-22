@@ -57,7 +57,7 @@ public class MateriaBlock extends LotmodModElements.ModElement {
 	public static FlowingFluid still = null;
 	private ForgeFlowingFluid.Properties fluidproperties = null;
 	public MateriaBlock(LotmodModElements instance) {
-		super(instance, 4);
+		super(instance, 15);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 

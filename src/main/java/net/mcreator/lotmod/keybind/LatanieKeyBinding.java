@@ -31,7 +31,7 @@ public class LatanieKeyBinding extends LotmodModElements.ModElement {
 	@OnlyIn(Dist.CLIENT)
 	private KeyBinding keys;
 	public LatanieKeyBinding(LotmodModElements instance) {
-		super(instance, 24);
+		super(instance, 11);
 		elements.addNetworkMessage(KeyBindingPressedMessage.class, KeyBindingPressedMessage::buffer, KeyBindingPressedMessage::new,
 				KeyBindingPressedMessage::handler);
 	}

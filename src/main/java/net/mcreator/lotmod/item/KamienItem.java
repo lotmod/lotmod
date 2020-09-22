@@ -48,7 +48,7 @@ public class KamienItem extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:entitybulletkamien")
 	public static final EntityType arrow = null;
 	public KamienItem(LotmodModElements instance) {
-		super(instance, 3);
+		super(instance, 9);
 	}
 
 	@Override

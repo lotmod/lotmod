@@ -10,7 +10,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class TntmocneOnKeyReleasedProcedure extends LotmodModElements.ModElement {
 	public TntmocneOnKeyReleasedProcedure(LotmodModElements instance) {
-		super(instance, 41);
+		super(instance, 32);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

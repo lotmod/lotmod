@@ -20,7 +20,7 @@ import java.util.Map;
 @LotmodModElements.ModElement.Tag
 public class SzybkiepodozewlacznaiOnKeyReleasedProcedure extends LotmodModElements.ModElement {
 	public SzybkiepodozewlacznaiOnKeyReleasedProcedure(LotmodModElements instance) {
-		super(instance, 46);
+		super(instance, 40);
 	}
 
 	public static void executeProcedure(Map<String, Object> dependencies) {

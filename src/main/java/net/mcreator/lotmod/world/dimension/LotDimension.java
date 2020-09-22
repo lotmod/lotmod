@@ -101,7 +101,7 @@ public class LotDimension extends LotmodModElements.ModElement {
 	public static DimensionType type = null;
 	private static Biome[] dimensionBiomes;
 	public LotDimension(LotmodModElements instance) {
-		super(instance, 2);
+		super(instance, 7);
 		MinecraftForge.EVENT_BUS.register(this);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}

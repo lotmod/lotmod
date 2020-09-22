@@ -46,7 +46,7 @@ public class StolikBlock extends LotmodModElements.ModElement {
 	@ObjectHolder("lotmod:stolik")
 	public static final Block block = null;
 	public StolikBlock(LotmodModElements instance) {
-		super(instance, 6);
+		super(instance, 20);
 	}
 
 	@Override

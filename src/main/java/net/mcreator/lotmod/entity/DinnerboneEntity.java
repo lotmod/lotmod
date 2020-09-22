@@ -45,7 +45,7 @@ import net.mcreator.lotmod.LotmodModElements;
 public class DinnerboneEntity extends LotmodModElements.ModElement {
 	public static EntityType entity = null;
 	public DinnerboneEntity(LotmodModElements instance) {
-		super(instance, 11);
+		super(instance, 37);
 		FMLJavaModLoadingContext.get().getModEventBus().register(this);
 	}
 
