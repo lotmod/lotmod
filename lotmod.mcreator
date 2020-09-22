@@ -727,35 +727,6 @@
       "registry_name": "tnty"
     },
     {
-      "name": "CosdorzucaniaBulletHitsBlock",
-      "type": "procedure",
-      "sortid": 56,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cosdorzucania_bullet_hits_block",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "Diamondlog",
       "type": "block",
       "sortid": 57,
@@ -765,69 +736,10 @@
       "registry_name": "diamondlog"
     },
     {
-      "name": "CosdorzucaniaEntitySwingsItem",
-      "type": "procedure",
-      "sortid": 55,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cosdorzucania_entity_swings_item",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
-      "name": "DirtswordToolInInventoryTick",
-      "type": "procedure",
-      "sortid": 54,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dirtsword_tool_in_inventory_tick",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          }
-        ]
-      }
-    },
-    {
-      "name": "Dirtsword",
-      "type": "tool",
-      "sortid": 15,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "dirtsword"
-    },
-    {
       "name": "DiamondlogBlockDestroyedByExplosion",
       "type": "procedure",
       "sortid": 57,
-      "compiles": false,
+      "compiles": true,
       "locked_code": false,
       "ids": {},
       "registry_name": "diamondlog_block_destroyed_by_explosion",
@@ -851,15 +763,6 @@
           }
         ]
       }
-    },
-    {
-      "name": "Cosdorzucania",
-      "type": "gun",
-      "sortid": 55,
-      "compiles": false,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cosdorzucania"
     }
   ],
   "variable_elements": [],
@@ -901,7 +804,6 @@
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "key.mcreator.latanie": "dom",
       "item.lotmod.endarmor_helmet": "End Helmet",
-      "item.lotmod.cosdorzucania": "Cos do rzucania",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"
@@ -942,7 +844,6 @@
       "item.lotmod.szybkiepodrorze": "Szybkiepodrorze Portal Igniter",
       "key.mcreator.latanie": "dom",
       "item.lotmod.endarmor_helmet": "End Helmet",
-      "item.lotmod.cosdorzucania": "Cos do rzucania",
       "item.lotmod.tnty_bucket": "Tnty Bucket",
       "item.lotmod.endarmorboots": "End Boots",
       "fluid.tnty": "Tnty"
