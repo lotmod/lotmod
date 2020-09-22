@@ -756,6 +756,15 @@
       }
     },
     {
+      "name": "Diamondlog",
+      "type": "block",
+      "sortid": 57,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "diamondlog"
+    },
+    {
       "name": "CosdorzucaniaEntitySwingsItem",
       "type": "procedure",
       "sortid": 55,
@@ -815,15 +824,6 @@
       "registry_name": "dirtsword"
     },
     {
-      "name": "Cosdorzucania",
-      "type": "gun",
-      "sortid": 55,
-      "compiles": true,
-      "locked_code": false,
-      "ids": {},
-      "registry_name": "cosdorzucania"
-    },
-    {
       "name": "DiamondlogBlockDestroyedByExplosion",
       "type": "procedure",
       "sortid": 57,
@@ -853,13 +853,13 @@
       }
     },
     {
-      "name": "Diamondlog",
-      "type": "block",
-      "sortid": 57,
+      "name": "Cosdorzucania",
+      "type": "gun",
+      "sortid": 55,
       "compiles": true,
       "locked_code": false,
       "ids": {},
-      "registry_name": "diamondlog"
+      "registry_name": "cosdorzucania"
     }
   ],
   "variable_elements": [],
